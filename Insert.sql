@@ -8,7 +8,20 @@ INSERT INTO album (album_id, name, year_of_issue)
 	VALUES (1, 'Meteora', 2003), (2, 'Праздник на улице 36', 2017), (3, 'TattleTales', 2020);
 	
 INSERT INTO track (track_id, name, duration, album_id)
-	VALUES (1, 'Вечеринка', 363, 2), (2, 'A Place for My Head', 184, 1), (3, 'From the inside', 175, 1), (4, 'Градус 100', 218, NULL), (5, 'Swervin', 189, 3), (6, 'Районы-кварталы', 204, NULL);
+	VALUES (1, 'Вечеринка', 363, 2),
+			(2, 'A Place for My Head', 184, 1),
+			(3, 'From the inside', 175, 1),
+			(4, 'Градус 100', 218, NULL),
+			(5, 'Swervin', 189, 3),
+			(6, 'Районы-кварталы', 204, NULL),
+			(7, 'myself', 210, NULL),
+			(8, 'by myself', 150, NULL),
+			(9, 'bemy self', 223, NULL),
+			(10, 'go my', 207, NULL),
+			(11, 'myself by', 291, NULL),
+			(12, 'by myself by', 189, NULL),
+			(13, 'beemy', 188, NULL),
+			(14, 'premyne', 177, NULL);
 	
 INSERT INTO Collection (id, name, year_of_issue)
 	VALUES (1, 'Сборник хитов 2007', 2007), (2, 'Сборник хитов 2017', 2017), (3, 'Сборник хитов 2020', 2020), (4, 'Сборник хитов 2003', 2003);

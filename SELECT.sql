@@ -2,7 +2,7 @@ SELECT name, duration FROM track
 WHERE duration = (SELECT MAX(duration) FROM track);
 
 SELECT name FROM track
-WHERE duration > 210;
+WHERE duration >= 210;
 
 SELECT name FROM collection
 WHERE year_of_issue BETWEEN 2018 AND 2020;
@@ -11,7 +11,7 @@ SELECT alias FROM performer
 WHERE alias NOT LIKE('% %');
 
 SELECT name FROM track
-WHERE name LIKE('%Мой%') OR name LIKE ('%My%') OR name LIKE ('%my%') OR name LIKE ('%мой%');
+WHERE string_to_array(lower(name), ' ') && ARRAY['my', 'мой'];
 
 SELECT name, COUNT(performer_id) FROM ganre_performer
 JOIN genre ON genre.genre_id = ganre_performer.genre_id 
